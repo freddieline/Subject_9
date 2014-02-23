@@ -43,7 +43,7 @@ function Update () {
 	motor.inputJump = Input.GetButton("Jump");
 	
 	// Set rotation to the move direction	
-	if (autoRotate && directionVector.sqrMagnitude > 0.01) {
+	/*if (autoRotate && directionVector.sqrMagnitude > 0.01) {
 		var newForward : Vector3 = ConstantSlerp(
 			transform.forward,
 			directionVector,
@@ -51,7 +51,7 @@ function Update () {
 		);
 		newForward = ProjectOntoPlane(newForward, transform.up);
 		transform.rotation = Quaternion.LookRotation(newForward, transform.up);
-	}
+	}*/
 }
 
 function ProjectOntoPlane (v : Vector3, normal : Vector3) {
